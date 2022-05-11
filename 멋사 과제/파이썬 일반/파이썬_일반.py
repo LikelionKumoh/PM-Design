@@ -5,8 +5,8 @@ map_size=int(input("맵크기를 입력해주세요. : "))
 bomb_cnt=int(input("폭탄 갯수를 입력해주세요. : "))
 
 mapList = []
-userx=0
-usery=0
+userX=0
+userY=0
 
 def creatmap(mapsize, bomb):
 
@@ -34,10 +34,10 @@ def creatmap(mapsize, bomb):
 creatmap(map_size, bomb_cnt)
 
 def pointmove(t):
-    global userx, usery
+    global userX, userY
 
-    nx=userx
-    ny=usery
+    nx=userX
+    ny=userY
 
     if (t == 1):
         nx=nx+1
@@ -46,8 +46,8 @@ def pointmove(t):
             if(mapList[nx][ny] == '⬜'):
                 mapList[nx][ny] = '🔳'
                 mapList[nx - 1][ny] = '⬜'
-                userx = nx
-                usery = ny
+                userX = nx
+                userY = ny
                 return True
             else:
                 return False
@@ -59,8 +59,8 @@ def pointmove(t):
             if(mapList[nx][ny] == '⬜'):
                 mapList[nx][ny] = '🔳'
                 mapList[nx][ny-1] = '⬜'
-                userx = nx
-                usery = ny
+                userX = nx
+                userY = ny
                 return True
             else:
                 return False
@@ -72,8 +72,8 @@ def pointmove(t):
             if(mapList[nx][ny] == '⬜'):
                 mapList[nx][ny] = '🔳'
                 mapList[nx+1][ny] = '⬜'
-                userx = nx
-                usery = ny
+                userX = nx
+                userY = ny
                 return True
             else:
                 return False
@@ -85,8 +85,8 @@ def pointmove(t):
             if(mapList[nx][ny] == '⬜'):
                 mapList[nx][ny] = '🔳'
                 mapList[nx][ny+1] = '⬜'
-                userx = nx
-                usery = ny
+                userX = nx
+                userY = ny
                 return True
             else:
                 return False
