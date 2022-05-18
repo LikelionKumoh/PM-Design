@@ -5,6 +5,7 @@
 }
 
 .searchbar-btn{
+    cursor: pointer;
     background-color: #E28E19;
     padding:11px 20px;
     height: 35%;
@@ -15,13 +16,13 @@
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
+    border-left: none;
+    
 }
 
 .main{
     display: flex;
-    margin-top: 1%;
+    margin-top: 3%;
     width: 700px;
     height: 200px;
     margin-left: auto;
@@ -50,7 +51,7 @@
 
 .slcmenu{
     margin-right: 10px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #828383;
     font-size: 20px;
 }
 
