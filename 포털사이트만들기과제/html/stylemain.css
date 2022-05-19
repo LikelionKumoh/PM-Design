@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.searchbar-btn{
+    cursor: pointer;
+    background-color: #E28E19;
+    padding:11px 20px;
+    height: 35%;
+    border: 6px #E28E19;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    
+}
+
+.main{
+    display: flex;
+    margin-top: 3%;
+    width: 700px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.MenuNsearchbar{
+    width: 80%;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: flex-start;
+    grid-template-columns: 85% 15%;
+}
+
+.searchbar-input{
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 6px #E28E19 solid;
+    border-right: 0px;
+    width: 30%;
+    height: 40px;
+}
+
+.slcmenu{
+    margin-right: 10px;
+    border-bottom: 1px solid #828383;
+    font-size: 20px;
+}
+
+
+.head-menu{
+    margin-bottom: 20px;
+}
+
+.head-list{
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom-style:double;
+    border-bottom-color:#E28E19;
+    border-bottom-width:10px;
+    border-top-width:10px;
+    padding-right: 10%;
+}
+
+.head-el{
+    color: #828383;
+    font-size: 25px;
+    list-style: none;
+    padding: 10px 10px;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+
