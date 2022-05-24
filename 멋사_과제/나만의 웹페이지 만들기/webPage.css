@@ -1,0 +1,170 @@
+body{
+    max-width: 1500px;
+    margin: 100px auto;
+}
+
+.top{
+    width: 100%;
+}
+
+.top-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width:60%;
+}
+
+.top-img{
+    width : 100%;
+
+}
+
+.top-logo{
+    width: 20%;
+    margin-right: 10px;
+}
+
+.top-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.top-text{
+    width: 97%;
+}
+
+.top-bar{
+    width: 80%;
+    border: 3px solid salmon;
+}
+
+.top-icon{
+    margin-left: 10px;
+    width:20%;
+}
+
+.mid{
+    margin-top: 50px;
+}
+
+.mid-list{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-sub{ 
+    width: 100%;
+    border-top: 10px double salmon;
+    border-bottom: 10px double salmon;
+}
+
+.list1{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.list2{
+    color: gray;
+}
+
+.bottom{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-left{
+    width: 70%
+}
+
+.bottom-right{
+    width: 28%
+}
+
+.blt-img{
+    width: 100%;
+}
+
+.bottom-left-mid{
+    height: 200px;
+}
+
+.bottom-title{
+    height: 50px;
+    background-color: orange;
+}
+
+.bottom-title-text{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+
+.list-top, .list-mid, .list-bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top1, .top2, .top3, .mid1, .mid2, .mid3, .bottom1, .bottom2, .bottom3{
+    width: 32%;
+    font-weight: bold;
+    text-align: center;
+    background-color: beige;
+}
+
+.bottom-left-img{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.blt-top, .blt-mid, .blt-bottom{
+    width: 100%;
+    padding: 50px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+.blt-mid{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottom-text{
+    font-size: 1.1rem;
+    margin-top: 100px;
+    font-weight: bold;
+
+}
+
+.brt-img{
+    width: 100%;
+}
+
+.bri-top, .bri-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bri1, .bri2{
+    width: 48%;
+}
+
+.bri-bottom{
+    margin-top: 50px;
+}
+
+.bottom-right-bottom{
+    margin-top: 340px;
+}
