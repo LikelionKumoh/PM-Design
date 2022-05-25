@@ -42,8 +42,8 @@ def sendEmail(addr):
 message = EmailMessage()
 message.set_content("대구FC 선수들을 소개합니다.")
 message["Subject"] = "크롤링해서 메일보내기[정유경]"
-message["From"] = "jungyu774@likelion.org"
-message["To"] = "kit@likelion.org"
+message["From"] = "********@likelion.org"
+message["To"] = "********@likelion.org"
 
 with open("daegu.txt", "rb") as txt:
     txt_file = txt.read()
@@ -52,8 +52,8 @@ message.add_attachment(txt_file, maintype='txt',
                        subtype='txt', filename=txt.name)
 
 smtp = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT)
-smtp.login("jungyu774@likelion.org", "29073493")
+smtp.login("*********@likelion.org", "*********")
 
-sendEmail("kit@likelion.org")
+sendEmail("********@likelion.org")
 
 smtp.quit()
