@@ -6,9 +6,6 @@ from datetime import datetime
 from email import message
 from email.message import EmailMessage
 
-
-
-
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
 url = "https://www.kumoh.ac.kr/ko/sub06_01_01_01.do"
@@ -16,20 +13,18 @@ url = "https://www.kumoh.ac.kr/ko/sub06_01_01_01.do"
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
 
-
-
-
-file = open("kumoh.txt", "w")
+file = open("kumoh.txt", "w", encoding='UTF-8')
 
 date = datetime.today().strftime("%Y년 %m월 %d일 \n")
 print(date)
 file.write(date)
 
-
 news = soup.findAll("span", "title-wrapper")
+
 for new in news:
-    file.write(new.get_text().strip())
-    print(new.get_text().strip())
+    result = re.sub('\s\s+', ' ', new.get_text().strip())
+    file.write(result)
+    file.write('\n')
 
 file.close()
 
@@ -53,7 +48,7 @@ def sendEmail(addr):
 message = EmailMessage()
 message.set_content("금오공대 공지사항")
 message["Subject"] = "크롤링해서 메일보내기[김태범]"
-message["From"] = "#####@likelion.org"
+message["From"] = "####@likelion.org"
 message["To"] = "kit@likelion.org"
 
 with open("kumoh.txt", "rb") as txt:
@@ -66,7 +61,7 @@ message.add_attachment(txt_file, maintype='txt', subtype='txt', filename=txt.nam
 
 
 smtp = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT)
-smtp.login("######@likelion.org", "#####")
+smtp.login("####@likelion.org", "####")
 
 sendEmail("kit@likelion.org")
 
