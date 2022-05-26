@@ -83,3 +83,89 @@
     font-size: 20px;
 }
 
+
+.body{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-left{
+    width: 70%
+}
+
+.body-right{
+    width: 28%
+}
+
+.body-left-mid{
+    height: 200px;
+}
+
+.body-left-img{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.body-title{
+    height: 50px;
+    background-color: #E28E19;
+}
+
+.body-title-text{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.top1, .top2, .top3, .mid1, .mid2, .mid3, .body1, .body2, .body3{
+    width: 32%;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FFFFCC;
+}
+
+.list-top, .list-mid, .list-body{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.blt-top, .blt-mid, .blt-body{
+    width: 100%;
+    padding: 50px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFCC;
+}
+
+.bar1, .bar2{
+    width: 48%;
+}
+
+.bar-top, .bar-body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bar-body{
+    margin-top: 50px;
+}
+
+.bar-img{
+    width: 100%;
+}
+
+.body-text{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 10px;
+    
+}
+
+.body-right-bottom{
+    margin-top: 300px;
+}
